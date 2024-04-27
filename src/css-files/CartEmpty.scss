@@ -1,0 +1,16 @@
+.empty-cart{
+    margin-top: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .cart-text{
+        text-align: center;
+        letter-spacing: 1.3px;
+        font-size: 2.8rem;
+        font-weight: 300; 
+    }
+    .item-cart{
+        margin: 2rem;
+    }
+}

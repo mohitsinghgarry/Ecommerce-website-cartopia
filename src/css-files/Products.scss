@@ -1,0 +1,15 @@
+.products-main-sec{
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns:.4fr 1fr;
+    .product-view-sort{
+        display: flex;
+        flex-direction: column
+    }
+}
+
+@media (max-width:980px) {
+    .products-main-sec{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

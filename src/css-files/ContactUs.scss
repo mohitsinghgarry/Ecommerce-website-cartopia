@@ -1,0 +1,59 @@
+.main-contact{
+    margin-top: 6rem;
+    text-align: center;
+
+    .container {
+      margin-top: 6rem;
+     display: grid;
+     gap: 3rem;
+     grid-template-columns: repeat(2,1fr);
+     .left-con{
+        img{
+            width: 35rem;
+        }
+     }
+      .contact-form {
+        max-width: 50rem;
+        margin: auto;
+        .contact-inputs {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          
+            input, textarea{
+                text-transform: uppercase;
+                font-weight: 500;
+                border-radius: 1rem;
+                padding: .7rem;
+                border: none;
+                box-shadow: 2px 1px 13px gray;
+            }
+        }
+      }
+    }
+}
+
+@media (max-width:993px) {
+    .main-contact{
+        .container {
+            grid-template-columns: repeat(1,1fr);
+         .left-con{
+            img{
+                width: 26rem;
+            }
+         }
+        }
+    }
+}
+@media (max-width:428px) {
+    .main-contact{
+        .container {
+            // grid-template-columns: repeat(1,1fr);
+         .left-con{
+            img{
+                width: 15rem;
+            }
+         }
+        }
+    }
+}

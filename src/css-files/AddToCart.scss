@@ -1,0 +1,17 @@
+.colors{
+    p{
+        .btn-color{
+            margin: .5rem;
+            width: 1.4rem;
+            border-radius: 50%;
+            filter: opacity(.5);
+            &:hover{
+                filter: opacity(1);
+            }
+        }
+        .active{
+            filter: opacity(1);
+        }
+
+    }
+}

@@ -1,0 +1,93 @@
+.trusted-container{
+    display: grid;
+    margin-top: 10rem;
+    grid-template-columns: repeat(2 ,1fr);
+    .left-trusted{
+        display: flex;
+        justify-content: center;
+    align-items: center;
+        img{
+            height: 22rem;
+            transition: all .3s ease-in-out;
+            &:hover{
+                transform: translateY(-20px);
+            }
+        }
+    }
+    .right-trusted{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        .mn-content{
+            font-size: 2rem;
+            font-weight: 400;
+            letter-spacing: 1.4px;
+            border-radius: 10px;
+        }
+        .brands{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-top: 3rem;
+            .img{
+                width: 5rem;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                filter: grayscale(100%);
+                align-items: center;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    transform: translateY(-20px);
+                    filter: grayscale(0%);
+                }
+            }
+
+        }
+    }
+}
+@media (max-width:992px) {
+    .trusted-container{
+        grid-template-columns: repeat(1 ,1fr);
+        margin-top: 20rem;
+        .right-trusted{
+            margin-top: 4rem;
+        }
+    }
+}
+@media (max-width:600px) {
+    .trusted-container{
+        grid-template-columns: repeat(1 ,1fr);
+        .left-trusted{
+            img{
+                height: 20rem;
+            }
+        }
+        .right-trusted{
+            .brands{
+               flex-wrap: wrap;
+               width: 1rem;
+            }
+        }
+    }
+}
+@media (max-width:510px) {
+    .trusted-container{
+        grid-template-columns: repeat(1 ,1fr);
+        .left-trusted{
+            img{
+                margin-left: 1rem;
+                height: 13rem;
+            }
+        }
+        .right-trusted{
+            .mn-content{
+                font-size:1.5rem;
+            }
+        }
+
+    }
+}

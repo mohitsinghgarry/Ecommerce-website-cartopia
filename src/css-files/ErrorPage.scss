@@ -1,0 +1,20 @@
+.error-page{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .error-type{
+        font-weight: 600;
+        font-size: 5rem;
+    }
+    .error-content{
+        font-size: 2rem;
+        letter-spacing: 1.2px;
+        font-weight: 400;
+    }
+   .warning-content{
+    letter-spacing: 1.2px;
+    font-weight: 300;
+   }
+}

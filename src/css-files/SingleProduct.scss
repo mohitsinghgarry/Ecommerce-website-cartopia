@@ -1,0 +1,98 @@
+.single-product-data{
+    margin-top: 5rem;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: black;
+}
+.single-product-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    .product-data{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        .product-data-price{
+            font-weight: 500;
+            del{
+                font-weight: 400;
+            }
+        }
+        .product-data-real-price{
+            font-weight: bold;
+            span{
+                font-weight: bold;
+                color:#7a39fa;
+            }
+        }
+        .product-data-warranty{
+            display: flex;
+            align-items: center;
+            // flex-wrap: wrap;
+            justify-content: space-between;
+            border-bottom: 2px solid black;
+            .product-warranty-data{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                p{
+                    letter-spacing: .3px;
+                    font-weight: 500;
+                    margin-top: .5rem;
+                    text-align: center;
+                }
+                .icon-container{
+                    background-color: black;
+                    width: 3rem;
+                    height: 3rem;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .warranty-icon{
+                       font-size: 2rem;
+                       color: white;
+                    }
+                }
+            }
+        }
+        .product-data-info{
+            margin-top: 1rem;
+            p{
+                font-weight: bold;
+                span{
+                    color: #7a39fa;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+@media (max-width:992px) {
+    .single-product-data{
+        .single-product-grid{
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+}
+@media (max-width:576px) {
+  .single-product-grid{
+    width: 100%;
+  }
+}
+@media (max-width:375px) {
+    .product-warranty-data{  
+        p{
+            font-size: small;
+        }
+}
+}
+
+
+.horizontal-line{
+    border: 0.08rem solid black;
+}
