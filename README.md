@@ -1,6 +1,6 @@
 # 🌟 Cartopia: E-commerce Website
 
-![Cartopia Banner](https://via.placeholder.com/800x200?text=Welcome+to+Cartopia)  
+![Cartopia Banner](/public/image.png)  
 *An online shopping platform built with React, delivering a dynamic and intuitive user experience.*
 
 ---
