@@ -9,7 +9,7 @@ return(
           {
             image.map((curr ,index)=>{
               return(
-                <figure key={index}>
+                <figure key={index} >
                   <img src={curr.url} style={{cursor:'pointer'}} className='box-image-style' alt={curr.filename} key={index} onClick={()=> setMainImage(curr)} />
                 </figure>
               )
