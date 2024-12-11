@@ -70,13 +70,13 @@ Ecommerce-website-cartopia/
 ## 🎥 Demo
 
 ### Homepage
-![Homepage](src/assets/homepage.png)
+![Homepage](/public/homepage.png)
 
 ### Product Listing
-![Product Listing](src/assets/product-listing.png)
+![Product Listing](/public/productlist.png)
 
 ### Shopping Cart
-![Shopping Cart](src/assets/cart.png)
+![Shopping Cart](/public/cart.png)
 
 ---
 
